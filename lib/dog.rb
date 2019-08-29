@@ -4,12 +4,6 @@ class Dog
   
   @@all = Array.new
   
-  def owner
-    "#{self.name}'s owner"
-  end
-  
-
-  
   def initialize(name)
     @name = name
     self.save
