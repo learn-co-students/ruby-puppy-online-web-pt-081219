@@ -1,27 +1,29 @@
 # Add your code here
 
-class Dog 
+class Dog
+
+  attr_accessor :name
+  
   @@all = []
-  
-  attr_accessor :name 
-  
+
+
   def initialize(name)
-    @name = name 
+    @name = name
     @@all << self
-  end 
-    
-    def self.all
+  end
+
+  def self.all
     @@all.each do |dog|
       puts dog.name
     end
   end 
-    
-     def self.clear_all
+  
+
+  def self.clear_all
     @@all.clear
   end
   
-  def print_all
-    @@all.print 
-  end
-  
-end
+  def self.print_all 
+    @@all.all.each {|dog| puts "#{dog.name}"
+  end 
+end 
