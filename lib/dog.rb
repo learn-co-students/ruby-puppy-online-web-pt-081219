@@ -1,10 +1,12 @@
-require 'pry'
+# require 'pry'
+# binding.pry
 class Dog
+  attr_accessor :name
 
   @@all = []
 
-  def initialize(name)
-    @name = name
+  def initialize(names)
+    @name = names
     save
   end
 
@@ -21,9 +23,9 @@ class Dog
   end
 
   def self.print_all
-      @@all.each do |name|
-        puts "#{name}"
-  binding.pry
+      @@all.each do |dog|
+      puts dog.name
       end
+
   end
 end
